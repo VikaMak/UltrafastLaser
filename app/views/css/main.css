@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+.main-text {
+			text-indent : 1.5em;
+			font-family : Helvetica, sans-serif;
+			text-align  : justify;
+			font-size   : 1em;
+		}
+ 	
+h4 {
+			margin-top : 30px;
+		}
+
+video {
+			display   : block;
+			max-width : 100%;
+			height    : auto;
+		}    	
