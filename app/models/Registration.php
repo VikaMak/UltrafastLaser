@@ -212,11 +212,7 @@ class Registration {
 					header('Location: /mvc/public/home/registration');
 					die();
 				}
-			
-				/**
-				 * Закрытие соединения с БД
-				 */
-				$db->mysqli->close();
+				
 			}			
 			 
 		}
