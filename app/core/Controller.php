@@ -6,8 +6,7 @@ class Controller {
 		
 		/**
 		 * Подключение необходимой модели
-		 * Создание экземпляра класса подключенной модели
-		 * @return object
+		 * 
 		 */ 
 		require_once '../app/models/'. $model .'.php';
 		return new $model();
