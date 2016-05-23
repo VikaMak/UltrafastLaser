@@ -5,8 +5,7 @@ class Controller {
 	public  function model($model) {
 		
 		/**
-		 * Подключение необходимой модели
-		 * 
+		 * Подключение необходимой модели 
 		 */ 
 		require_once '../app/models/'. $model .'.php';
 		return new $model();
