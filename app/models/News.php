@@ -55,18 +55,13 @@ class News {
 		 */
 		$pages_result = $db->mysqli->query("SELECT COUNT(*) AS `num` FROM `news`")->fetch_assoc();
 		
-		if ($pages_result['num'] % $limit == 0) {
-			
 			/**
 			 * Параметр, определяющий количество страниц с новостями, на каждой из которых
 			 * находится $limit новостей
 			 * @var integer
 			 */
-			$this->pages = $pages_result['num']/$limit;
-		} else {
 			$this->pages = ceil($pages_result['num']/$limit);
-		}
-		
+			
 		/**
 		 * Выборка всех существующих новостей и соответствующих им комментариев
 		 */
