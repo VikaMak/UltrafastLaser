@@ -1,10 +1,5 @@
 <?php
 
-/**
- * Контроллеры, которые подключают необходимые модель и представление (с параметрами, переданными из модели)
- * @author Vika
- *
- */
 class Home extends Controller {
 	
 	public function index() {
@@ -21,7 +16,7 @@ class Home extends Controller {
 										'age'        =>$user->age,
 										'er_login'   =>$user->errors['login'],
 										'er_password'=>$user->errors['password'],
-										'er_email'   =>$user->errors['email'],								
+										'er_email'   =>$user->errors['email'],
 		]);
 	}
 	
@@ -54,15 +49,13 @@ class Home extends Controller {
 								  $user->comments,
 								  'page'   =>$user->page,
 								  'pages'=>$user->pages,
-								  
-								  //'text'    =>$user->records[0]['text'],
 		]);
 	}
 	
 	public function editnews() {
 		
 		$user = $this->model('EditNews');
-		$this->view('home/editnews', [$user->entry,									
+		$this->view('home/editnews', [$user->entry,
 		]);
 	}
 	
