@@ -26,4 +26,4 @@ define("ADMIN", isset($_SESSION['ADMIN']));
  * Создание экземпляра класса App
  * @var object
  */
-$app = App::getInstance();
+$app = new App;

@@ -3,29 +3,6 @@
 class App {
 	
 	/**
-	 * Переменная для создания экземпляра класса
-	 * @var null
-	 */
-	private static $instance = null;
-	
-	/**
-	 * Функция, создающая экземпляр класса
-	 */
-	public static function getInstance() {
-		
-		/**
-		 * Проверка на существование экземпляра класса.
-		 * В случае отсутствия экземпляра класса - его создание
-		 */
-		if (self::$instance === null) {
-				
-			self::$instance = new self();
-		}
-	
-		return self::$instance;
-	}
-	
-	/**
 	 * Определяет используемый контроллер. По умолчанию используется контроллер home 
 	 * @var string
 	 */
@@ -43,7 +20,7 @@ class App {
 	 */
 	protected $params = [];	
 		
-	private function __construct() {
+	public function __construct() {
 		$url = $this->parseUrl();
 		//print_r($url);
 		
