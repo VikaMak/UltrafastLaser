@@ -46,14 +46,11 @@
 	
 		<?php foreach ($data[2] as $v) {?>
 			<div class="entry" id="el">
-				<p><b><?php echo $v['name'];?></b>
-					<?php if (ADMIN) {?>
-					<a href="?act=edit-comment&entry_id=<?php echo $v['id'];?>&id=<?php echo $v['id'];?>"><span class="glyphicon glyphicon-edit"></span></a>
-					<a href="?act=remove-comment&entry_id=<?php echo $v['id'];?>&id=<?php echo $v['id'];?>"><span class="glyphicon glyphicon-remove"></span></a>
-					<?php }?>
+				<p>
+					<b><?php echo $v['name'];?></b>
 				</p>
-				<p class="text-justify"><?php echo $v['text'];?></p>				 			
-				<p class="comment"><?php echo $v['date'];?></p>			  		
+				<p class="text-justify"><?php echo $v['text'];?></p>
+				<p class="comment"><?php echo $v['date'];?></p>
 			</div>
 		<?php }?>
 		
