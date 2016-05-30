@@ -1,4 +1,4 @@
-Options -MultiViews
+
 RewriteEngine On
 
 RewriteBase /mvc/public/
