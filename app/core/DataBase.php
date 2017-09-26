@@ -68,7 +68,7 @@ class DataBase
             $i = 1;
             if (count($params)) {
                 foreach ($params as $param) {
-                    $this->db_query->bindValue($x, $param);
+                    $this->db_query->bindValue($i, $param);
                     $i++;
                 }
             }
