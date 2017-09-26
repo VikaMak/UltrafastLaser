@@ -1,6 +1,6 @@
 RewriteEngine On
 
-RewriteBase /mvc/public/
+RewriteBase /02/UltrafastLaser/public/
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f

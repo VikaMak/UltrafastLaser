@@ -1,13 +1,9 @@
 <?php
-/**
- * Отключение вывода ошибок на экран
- */
+
 ini_set('display_errors', 'Off');
 ini_set('session.cookie_httponly',1);
 
-/**
- * Начало сессии
- */
+
 session_start();
 
 /**
@@ -26,4 +22,4 @@ define("ADMIN", isset($_SESSION['ADMIN']));
  * Создание экземпляра класса App
  * @var object
  */
-$app = new App;
+$app = new App();
